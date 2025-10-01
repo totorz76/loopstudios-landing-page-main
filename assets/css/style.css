@@ -186,6 +186,7 @@ footer .réseaux ul{
     color:hsl(0, 0%, 41%) ;
 }
 @media screen and (min-width:576px) {
+    /* header */
     header {
         background-image: url(/assets/images/desktop/image-hero.jpg);
         height: 90vh;
@@ -207,7 +208,7 @@ footer .réseaux ul{
     width: 400px;
     word-break: normal;
    }
-
+   /* about */
    #about{
     width: 100%;
     gap: 1rem;
@@ -228,7 +229,7 @@ footer .réseaux ul{
    .text p{
     text-align: left;
    }
-
+   /* creations */
    #creations .container{
     flex-wrap: wrap;
     flex-direction: row;
@@ -257,6 +258,7 @@ footer .réseaux ul{
     text-align: end;
     margin-top: 1.5rem;
    }
+   /* footer */
    .fbox{
     justify-content: space-between;
    }
