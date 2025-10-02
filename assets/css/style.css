@@ -40,17 +40,41 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 3rem 1rem;
+    position: relative;
 }
 #navbar nav ul {
     list-style: none;
     display: flex;
+    flex-direction: column;
     gap: 1rem;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    opacity: 80%;
+    width: 486px;
+    padding:1rem ;
     li a{
         text-decoration: none;
-        color: white;
+        color: black;
+        font-family: var(--primary);
+        font-weight: 200;
+        font-size: 20px;
     }
 }
 .navlist{
+    display: none;
+    position: absolute;
+    top: 65%;
+    width: 30%;
+    padding: 1rem;
+}
+header #openmenu:checked~.navlist{
+    display: block;
+}
+header #openmenu:checked~label>img {
+    content: url(../images/icon-close.svg);
+}
+#openmenu{
     display: none;
 }
 /* .border{
@@ -196,9 +220,26 @@ footer .réseaux ul{
    } 
    nav{
     justify-content: space-around;
+    position: unset ;
+    width: unset;
    }
    .navlist {
     display: block;
+    position: unset;
+    top: unset;
+    width: unset;
+    padding: unset;
+   }
+   #navbar nav ul{
+   position: unset;
+   padding: unset;
+   flex-direction: row;
+   background-color: unset;
+   opacity: unset;
+   width: unset;
+   }
+   #navbar nav ul li a{
+    color: white;
    }
    #over{
     margin-left: 19rem;
